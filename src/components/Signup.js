@@ -24,7 +24,7 @@ function count(){
         <div className='mt-2'>
             <p className="display-2 text-primary text-center">Sign Up</p>
             <p className="lead text-center">
-                Sign Up for exciting Content
+                Sign Up for exciting Products 
             </p>
         
         <div>
@@ -78,49 +78,6 @@ function count(){
                  <small  className="form-text text-muted">Your password must be 8-20 characters long, contain letters, numbers and special characters.</small>
        
                  </div>
-                 <div className='mb-3 mt-4'>
-                     <label htmlFor='dob'>Date of Birth<span className='text-danger'> *</span></label>
-                     <input type="date" name="" id="dob" className="form-control" {...register("dob",{ required: true })} ></input>
-                     {errors.dob?.type === 'required' && <p className='text-danger'>* Date Of Birth is required</p>}
-                 </div>
-            
-                      <label>Gender<span className='text-danger'> *</span></label>
-                  
-                 <div className='mt-2' >
-                     <input type="radio" name="gender" id="male" {...register("Gender",{ required: true })} value="Male" ></input>
-                     <label htmlFor='male'className='mx-2'>Male</label>
-                </div>
-                    
-                <div  >
-                     <input type="radio" name="gender" id="female" value="Female" {...register("Gender")} ></input>
-                     <label htmlFor='female'className='mx-2'>Female</label>
-                     {errors.Gender?.type === 'required' && <p className='text-danger'>* This field is required</p>}
-                 </div>
-
-                 <div className='form-radio'>
-                     <input type="radio" name="gender" id="Other" {...register("Gender")}  value="Other"></input>
-                     <label htmlFor='Other' className='mx-2'>Other</label>
-                 </div>
-                 <div className="mb-3 mt-3">
-                    <label>Select skills</label> 
-
-                 <div className="form-check mt-2">
-                        <input type="checkbox" id="py" className="form-check-input" {...register("skills")} value="Python" />
-                        <label htmlFor="py" className="form-check-label ">Python</label>
-                    </div> 
-              
-                 <div className="form-check">
-                        <input type="checkbox" id="c" className="form-check-input" {...register("skills")} value="C" />
-                        <label htmlFor="c" className="form-check-label">C</label>
-                    </div> 
-                  
-                  <div className="form-check">
-                        <input type="checkbox" id="c++" className="form-check-input" {...register("skills")} value="C++" />
-                        <label htmlFor="c++" className="form-check-label">C++</label>
-                       
-                  </div> 
-
-                  </div>
                   <label className=" mt-4">Terms & Services </label>
                   <div  className="form-check mt-2">
                       
@@ -148,10 +105,6 @@ function count(){
                     <th>FirstName</th>
                     <th>LastName</th>
                     <th>Email</th>
-                    <th>DateofBirth</th>
-                    <th>Gender</th>
-                    <th>Skills</th>
-
                 </tr>
             </thead>
 
@@ -163,14 +116,6 @@ function count(){
                             <td>{userObj.FirstName}</td>
                             <td>{userObj.LastName}</td>
                             <td>{userObj.email}</td>
-                            <td>{userObj.dob}</td>
-                            <td>{userObj.Gender}</td>
-                            <td>
-                             {/* <ol> {userObj.skills} </ol> */}
-                             {userObj.skills.map(name =><p>{name}</p
-                             
-                             >)}
-                            </td>
                         </tr>)
                 
                 }

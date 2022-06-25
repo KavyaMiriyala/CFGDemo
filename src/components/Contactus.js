@@ -15,7 +15,7 @@ function Contactus(){
 
     return (
         <div className='text-center container'>
-            <p className="display-2 text-secondary">Technician data</p>
+            <p className="display-2 text-secondary">SHG Data</p>
             {/* table */}
             <table className="table table-bordered table-hover text-success table-sm">
                 <thead>

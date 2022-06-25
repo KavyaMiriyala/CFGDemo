@@ -27,7 +27,7 @@ console.log(props)
    <p className=' fs-6'>{props.webObj.webName4}</p>  
 </div>
  </div>
- <NavLink className="nav-link text-start" to="https://www.amazon.in/alm/storefront?almBrandId=ctnow&pf_rd_r=G5MCASK5ADB3MPB5022Z&pf_rd_p=dbcfb001-76fa-49bc-ada6-a13d343a1124">See more</NavLink>
+ <NavLink className="nav-link text-start" to=" ">See more</NavLink>
   </div>
   )
 }

@@ -4,9 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
-import { render } from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-import { Link } from "react-router-dom";
+import '@coreui/coreui/dist/css/coreui.min.css'
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
